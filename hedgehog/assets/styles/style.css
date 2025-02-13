@@ -1,0 +1,111 @@
+
+
+.content {
+	display: flex; /* превращаем блок в гибкий контейнер */
+	align-items: center; /* выравниваем содержимое по вертикали по центру */
+	justify-content: center; /* а теперь по горизонтали по центру */
+	flex-wrap: wrap; /* задаем вывод элементов в несколько строк с переносами */
+	width: 90%; /* ширина блока в процентах от родительского */
+	margin: 0 auto; /* настраиваем внешние отступы сверху и сбоку*/
+	padding: 1em; /* все поля внутри блока по 1 em */
+}
+
+/* ---- настройка header ---- */
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0.5rem;
+}
+
+
+header img.logo {
+	width: 20vw; /* ширину логотипа устанавливаем в процентах от размера экрана */
+}
+
+/* отдельно настраиваем меню для шапки сайта */
+header nav ul {
+	display: flex; /* превращаем элемент во flex-контейнер */
+	flex-wrap: wrap;
+	padding-left: 1rem;
+}
+header nav ul li {
+	margin-right: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+
+section.banner .content {
+	display: block; /* меняем установленный для всех блоков  с контентом режим отображения с гибкого на блочный */
+}
+
+
+/*------------------------ СТРАНИЦА INDEX.HTML ------------------------*/
+
+
+
+.advantages .content {
+	justify-content: space-between;
+}
+
+.advantages .advantage img {
+	margin: 0 auto;
+	max-width: 80%;
+}
+
+/* скрываем текст в блоке */
+.advantages .advantage p {
+	display: none;
+}
+
+/*------------ настройка блока select ------------*/
+
+
+
+.select .select__hedgehogs .select__hedgehog {
+	margin-bottom: 1rem;
+}
+
+
+.select .select__hedgehogs .select__hedgehog img {
+	width: 100%;
+}
+
+
+/*----------- настройка блока review ----------*/
+
+.reviews .content .review img {
+	display: none;
+}
+
+
+.reviews .content .review .review__text blockquote {
+	padding: 0.5rem;
+	margin: 0.5rem;
+}
+
+
+/*----------- настройка блока map ----------*/
+
+.map iframe {
+	width: 100%;
+	height: 400px;
+}
+
+/*------------------------ СТРАНИЦА BEST.HTML ------------------------*/
+
+
+.hedgehogs .hedgehog .hedgehog__descript img {
+	max-width: 90%;
+}
+
+.hedgehogs .hedgehog .hedgehog__buy {
+	padding: 0.5rem;
+}
+
+.hedgehogs .hedgehog .hedgehog__buy ul {
+	padding-left: 0;
+}
+
+
